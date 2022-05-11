@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+line-bot-sdk
+python-dotenv
+jinja2
+mock
+pytest
+pytest-flake8
+pytest-pep8
+pytest-cov

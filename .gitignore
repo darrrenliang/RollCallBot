@@ -26,3 +26,10 @@ wheels/
 # SSL file
 *.pem
 *.key
+
+# Environments
+.env
+env/
+
+# Test file
+.test

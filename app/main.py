@@ -2,8 +2,7 @@ import config
 import uvicorn
 from fastapi import FastAPI
 from fastapi.templating import Jinja2Templates
-# from line.urls import line_app
-from routers.line.message_event import line_bot_api
+from routers.line.urls import line_app
 from view import view
 
 app = FastAPI()
@@ -13,7 +12,7 @@ templates = Jinja2Templates(directory="templates")
 app.include_router(view)
 
 # LINE Bot
-# app.include_router(line_app)
+app.include_router(line_app)
 
 
 if __name__ == "__main__":

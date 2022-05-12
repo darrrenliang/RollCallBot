@@ -22,6 +22,6 @@ def handle_message(event):
         # Get user sent message
         user_message = event.message.text
         print(user_message)
-        # Reply with same message
+        # # Reply with same message
         # messages = TextSendMessage(text=user_message)
         # line_bot_api.reply_message(reply_token=reply_token, messages=messages)
